@@ -28,6 +28,13 @@ const CartItem: React.FC<{
       <p>{indexNum}</p>
       <p>{title}</p>
       <p className={cssCartActions}>
+        <button className={`${cssCartActionButton}`} onClick={onDecrease}>
+          -
+        </button>
+        <span>{quantity}</span>
+        <button className={cssCartActionButton} onClick={onIncrease}>
+          +
+        </button>
       </p>
       <p>{currencyFormatter.format(price)}</p>
       <p>{currencyFormatter.format(price * quantity)}</p>
