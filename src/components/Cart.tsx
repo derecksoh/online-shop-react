@@ -31,7 +31,7 @@ const Cart: React.FC = () => {
     >
       <h2 className="my-4 font-bold text-2xl">Your Cart</h2>
       <ul className="list-none my-2 p-0">
-        <li className={`${cssCartItem} + font-bold`}>
+        <li className={`${cssCartItem} + font-bold hidden md:grid`}>
           <p>number</p>
           <p>Title</p>
           <p>Quantity</p>

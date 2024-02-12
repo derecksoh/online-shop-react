@@ -81,7 +81,7 @@ const Products: React.FC = () => {
           <option value="women's clothing">Women's Clothing</option>
         </select>
       </div>
-      <ul className="w-90 max-w-70rem list-none mx-auto my-8 p-4 grid grid-cols-3 gap-4">
+      <ul className="w-90 max-w-70rem list-none mx-auto my-8 p-4 grid md:grid-cols-3 sm:grid-cols-1 gap-4">
         {filteredProducts.map((product: Product) => (
           <ProductItem key={product.id} product={product} />
         ))}

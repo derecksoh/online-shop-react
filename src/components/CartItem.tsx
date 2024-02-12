@@ -1,7 +1,7 @@
 import React from "react";
 import { currencyFormatter } from "../util/formatting";
 
-const cssCartItem: string = "grid grid-cols-6 items-center gap-4 my-2";
+const cssCartItem: string = "grid sm:grid-cols-1 md:grid-cols-6 items-center gap-4 my-2";
 const cssCartActions: string = "flex gap-4 items-center justify-center";
 const cssCartActionButton: string =
   "cursor-pointer text-base w-6 h-6 rounded-[50%] border-none bg-stone-800 text-pink-400 flex items-center justify-center hover:bg-stone-900 hover:text-pink-300 active:bg-stone-900 active:text-pink-300";
