@@ -6,7 +6,7 @@ import React, { useMemo, useState } from "react";
 
 const requestConfig = {};
 
-const cssSearch = "p-2 border-gray-300 rounded mr-4 w-[25%]";
+const cssSearch = "p-2 border-gray-300 rounded md:mr-4 mb-4 md:w-64 w-[90%]";
 
 const Products: React.FC = () => {
   const [searchText, setSearchText] = useState<string>("");
@@ -61,18 +61,18 @@ const Products: React.FC = () => {
 
   return (
     <div>
-      <div className="flex items-center justify-center text-stone-900">
+      <div className="flex flex-wrap justify-center items-center text-stone-900">
         <input
-          type="text"
-          value={searchText}
-          onChange={handleSearchInputChange}
-          placeholder="Search by name"
-          className={cssSearch}
+            type="text"
+            value={searchText}
+            onChange={handleSearchInputChange}
+            placeholder="Search by name"
+            className={cssSearch}
         />
         <select
-          className={cssSearch}
-          value={selectedCategory}
-          onChange={handleCategoryChange}
+            className={cssSearch}
+            value={selectedCategory}
+            onChange={handleCategoryChange}
         >
           <option value="">All Categories</option>
           <option value="electronics">Electronics</option>
